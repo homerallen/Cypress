@@ -1,6 +1,4 @@
-
-
-const electricityRatesLandingPage = 'https://electricityrates.com/LP/Dynamic2/?zipCode=77004&sid=tpaautomatedtest'
+const electricityRatesLandingPage = 'https://electricityrates.com/LP/Dynamic2/?zipCode=77004&sid=ttxautomatedtest'
 const firstSSN = '123-45-6789';
 const secondSSN = '111-11-1111';
 
@@ -152,7 +150,7 @@ function proceedsToAccountInfo() {
 
 function clicksThroughToContactInfo() {
     cy.get('h1')
-        .should('contain', 'Pennsylvania Electricity Rates')
+        .should('contain', 'Texas Electricity Rates')
 
     cy.get('#packages')
         .find('button')
@@ -174,6 +172,3 @@ function populateContactInfo() {
   cy.get('#email')
     .type('test@test.com')
 }
-
-
-
